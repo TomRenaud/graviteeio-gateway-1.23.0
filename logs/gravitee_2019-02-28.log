@@ -1,0 +1,966 @@
+10:55:36.728 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration.
+10:55:36.733 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - 	Gravitee configuration loaded from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/config/gravitee.yml
+10:55:36.829 [graviteeio-node] [] INFO  i.g.n.c.s.e.PropertiesConfiguration - Loading Gravitee configuration. DONE
+10:55:36.877 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Loading plugin handlers
+10:55:36.882 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - Find 8 plugin handler(s):
+10:55:36.883 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.notifier.plugin.NotifierPluginHandler
+10:55:36.884 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.plugin.discovery.internal.ServiceDiscoveryPluginHandler
+10:55:36.884 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.plugin.policy.internal.PolicyPluginHandler
+10:55:36.885 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.plugins.service.handler.ServicePluginHandler
+10:55:36.887 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.gateway.repository.plugins.RepositoryPluginHandler
+10:55:36.888 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.node.reporter.plugin.ReporterPluginHandler
+10:55:36.889 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.plugin.alert.internal.AlertPluginHandler
+10:55:36.890 [graviteeio-node] [] INFO  i.g.p.c.s.PluginHandlerBeanFactoryPostProcessor - 	io.gravitee.plugin.resource.internal.ResourcePluginHandler
+10:55:37.097 [graviteeio-node] [] INFO  i.g.g.r.p.RepositoryPluginHandler - Loading repository for scope MANAGEMENT: mongodb
+10:55:37.097 [graviteeio-node] [] INFO  i.g.g.r.p.RepositoryPluginHandler - Loading repository for scope RATE_LIMIT: mongodb
+10:55:37.097 [graviteeio-node] [] INFO  i.g.g.r.p.RepositoryPluginHandler - Loading repository for scope CACHE: ehcache
+10:55:42.999 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /apis [io.gravitee.gateway.handlers.api.manager.endpoint.ApisManagementEndpoint]
+10:55:43.001 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /apis/:apiId [io.gravitee.gateway.handlers.api.manager.endpoint.ApiManagementEndpoint]
+10:55:43.045 [graviteeio-node] [] INFO  i.g.node.container.AbstractContainer - Starting Gravitee.io - API Gateway...
+10:55:43.045 [graviteeio-node] [] INFO  i.g.g.standalone.node.GatewayNode - Gravitee.io - API Gateway is now starting...
+10:55:43.045 [graviteeio-node] [] INFO  i.g.g.standalone.node.GatewayNode - 	Starting component: PluginEventListener
+10:55:43.045 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginEventListener
+10:55:43.046 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener PluginEventListener for event type class io.gravitee.plugin.core.api.PluginEvent
+10:55:43.046 [graviteeio-node] [] INFO  i.g.g.standalone.node.GatewayNode - 	Starting component: PluginRegistry
+10:55:43.047 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.plugin.core.internal.PluginRegistryImpl
+10:55:43.047 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Initializing plugin registry.
+10:55:43.047 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugins from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins
+10:55:43.050 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-gateway-services-apikeyscache-1.23.0.zip
+10:55:43.163 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-gateway-services-apikeyscache-1.23.0/gravitee-gateway-services-apikeyscache-1.23.0.jar
+10:55:43.167 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-gateway-services-endpoint-discovery-1.23.0.zip
+10:55:43.171 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-gateway-services-endpoint-discovery-1.23.0/gravitee-gateway-services-endpoint-discovery-1.23.0.jar
+10:55:43.171 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-gateway-services-healthcheck-1.23.0.zip
+10:55:43.209 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-gateway-services-healthcheck-1.23.0/gravitee-gateway-services-healthcheck-1.23.0.jar
+10:55:43.210 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-gateway-services-heartbeat-1.23.0.zip
+10:55:43.214 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-gateway-services-heartbeat-1.23.0/gravitee-gateway-services-heartbeat-1.23.0.jar
+10:55:43.215 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-gateway-services-localregistry-1.23.0.zip
+10:55:43.218 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-gateway-services-localregistry-1.23.0/gravitee-gateway-services-localregistry-1.23.0.jar
+10:55:43.218 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-gateway-services-ratelimit-1.4.0.zip
+10:55:43.283 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-gateway-services-ratelimit-1.4.0/gravitee-gateway-services-ratelimit-1.4.0.jar
+10:55:43.284 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-gateway-services-subscriptions-cache-1.23.0.zip
+10:55:43.356 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-gateway-services-subscriptions-cache-1.23.0/gravitee-gateway-services-subscriptions-cache-1.23.0.jar
+10:55:43.358 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-gateway-services-sync-1.23.0.zip
+10:55:43.362 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-gateway-services-sync-1.23.0/gravitee-gateway-services-sync-1.23.0.jar
+10:55:43.362 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-node-services-healthcheck-1.2.2.zip
+10:55:43.365 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-node-services-healthcheck-1.2.2/gravitee-node-services-healthcheck-1.2.2.jar
+10:55:43.366 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-node-services-monitoring-1.2.2.zip
+10:55:43.369 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-node-services-monitoring-1.2.2/gravitee-node-services-monitoring-1.2.2.jar
+10:55:43.369 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-apikey-1.6.4.zip
+10:55:43.373 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-apikey-1.6.4/gravitee-policy-apikey-1.6.4.jar
+10:55:43.373 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-assign-attributes-1.0.0.zip
+10:55:43.376 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-assign-attributes-1.0.0/gravitee-policy-assign-attributes-1.0.0.jar
+10:55:43.377 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-assign-content-1.1.0.zip
+10:55:43.391 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-assign-content-1.1.0/gravitee-policy-assign-content-1.1.0.jar
+10:55:43.391 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-cache-1.5.0.zip
+10:55:43.394 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-cache-1.5.0/gravitee-policy-cache-1.5.0.jar
+10:55:43.395 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-callout-http-1.2.0.zip
+10:55:43.398 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-callout-http-1.2.0/gravitee-policy-callout-http-1.2.0.jar
+10:55:43.398 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-dynamic-routing-1.4.0.zip
+10:55:43.402 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-dynamic-routing-1.4.0/gravitee-policy-dynamic-routing-1.4.0.jar
+10:55:43.403 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-generate-jwt-1.0.0.zip
+10:55:43.449 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-generate-jwt-1.0.0/gravitee-policy-generate-jwt-1.0.0.jar
+10:55:43.450 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-groovy-1.7.0.zip
+10:55:43.504 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-groovy-1.7.0/gravitee-policy-groovy-1.7.0.jar
+10:55:43.505 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-html-json-1.3.0.zip
+10:55:43.513 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-html-json-1.3.0/gravitee-policy-html-json-1.3.0.jar
+10:55:43.515 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-ipfiltering-1.2.0.zip
+10:55:43.522 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-ipfiltering-1.2.0/gravitee-policy-ipfiltering-1.2.0.jar
+10:55:43.522 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-json-to-json-1.2.0.zip
+10:55:43.532 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-json-to-json-1.2.0/gravitee-policy-json-to-json-1.2.0.jar
+10:55:43.533 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-json-validation-1.0.0.zip
+10:55:43.593 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-json-validation-1.0.0/gravitee-policy-json-validation-1.0.0.jar
+10:55:43.594 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-jws-1.0.0.zip
+10:55:43.599 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-jws-1.0.0/gravitee-policy-jws-1.0.0.jar
+10:55:43.599 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-jwt-1.9.0.zip
+10:55:43.611 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-jwt-1.9.0/gravitee-policy-jwt-1.9.0.jar
+10:55:43.612 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-keyless-1.1.0.zip
+10:55:43.615 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-keyless-1.1.0/gravitee-policy-keyless-1.1.0.jar
+10:55:43.616 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-latency-1.0.0.zip
+10:55:43.620 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-latency-1.0.0/gravitee-policy-latency-1.0.0.jar
+10:55:43.621 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-mock-1.5.0.zip
+10:55:43.625 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-mock-1.5.0/gravitee-policy-mock-1.5.0.jar
+10:55:43.626 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-oauth2-1.7.0.zip
+10:55:43.628 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-oauth2-1.7.0/gravitee-policy-oauth2-1.7.0.jar
+10:55:43.629 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-openid-connect-userinfo-1.0.0.zip
+10:55:43.631 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-openid-connect-userinfo-1.0.0/gravitee-policy-openid-connect-userinfo-1.0.0.jar
+10:55:43.632 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-override-http-method-1.0.0.zip
+10:55:43.634 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-override-http-method-1.0.0/gravitee-policy-override-http-method-1.0.0.jar
+10:55:43.634 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-quota-1.4.0.zip
+10:55:43.637 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-quota-1.4.0/gravitee-policy-quota-1.4.0.jar
+10:55:43.637 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-ratelimit-1.4.0.zip
+10:55:43.640 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-ratelimit-1.4.0/gravitee-policy-ratelimit-1.4.0.jar
+10:55:43.640 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-request-content-limit-1.3.0.zip
+10:55:43.642 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-request-content-limit-1.3.0/gravitee-policy-request-content-limit-1.3.0.jar
+10:55:43.643 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-request-validation-1.1.0.zip
+10:55:43.646 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-request-validation-1.1.0/gravitee-policy-request-validation-1.1.0.jar
+10:55:43.646 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-resource-filtering-1.2.0.zip
+10:55:43.653 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-resource-filtering-1.2.0/gravitee-policy-resource-filtering-1.2.0.jar
+10:55:43.653 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-rest-to-soap-1.3.0.zip
+10:55:43.657 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-rest-to-soap-1.3.0/gravitee-policy-rest-to-soap-1.3.0.jar
+10:55:43.658 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-transformheaders-1.3.1.zip
+10:55:43.662 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-transformheaders-1.3.1/gravitee-policy-transformheaders-1.3.1.jar
+10:55:43.662 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-transformqueryparams-1.2.0.zip
+10:55:43.665 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-transformqueryparams-1.2.0/gravitee-policy-transformqueryparams-1.2.0.jar
+10:55:43.666 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-url-rewriting-1.0.0.zip
+10:55:43.670 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-url-rewriting-1.0.0/gravitee-policy-url-rewriting-1.0.0.jar
+10:55:43.670 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-xml-json-1.3.0.zip
+10:55:43.674 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-xml-json-1.3.0/gravitee-policy-xml-json-1.3.0.jar
+10:55:43.675 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-policy-xslt-1.2.0.zip
+10:55:43.717 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-policy-xslt-1.2.0/gravitee-policy-xslt-1.2.0.jar
+10:55:43.718 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-reporter-elasticsearch-1.23.0.zip
+10:55:43.766 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-reporter-elasticsearch-1.23.0/gravitee-reporter-elasticsearch-1.23.0.jar
+10:55:43.767 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-reporter-file-1.3.0.zip
+10:55:43.779 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-reporter-file-1.3.0/gravitee-reporter-file-1.3.0.jar
+10:55:43.780 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-repository-ehcache-1.0.0.zip
+10:55:43.816 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-repository-ehcache-1.0.0/gravitee-repository-ehcache-1.0.0.jar
+10:55:43.816 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-repository-mongodb-1.23.0.zip
+10:55:43.861 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-repository-mongodb-1.23.0/gravitee-repository-mongodb-1.23.0.jar
+10:55:43.862 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-resource-cache-1.1.0.zip
+10:55:43.934 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-resource-cache-1.1.0/gravitee-resource-cache-1.1.0.jar
+10:55:43.935 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-resource-oauth2-provider-am-1.7.1.zip
+10:55:43.939 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-resource-oauth2-provider-am-1.7.1/gravitee-resource-oauth2-provider-am-1.7.1.jar
+10:55:43.939 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-resource-oauth2-provider-generic-1.10.0.zip
+10:55:43.942 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-resource-oauth2-provider-generic-1.10.0/gravitee-resource-oauth2-provider-generic-1.10.0.jar
+10:55:43.943 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Loading plugin from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/gravitee-service-discovery-consul-1.0.0.zip
+10:55:43.951 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - A plugin manifest has been loaded from: /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/plugins/.work/gravitee-service-discovery-consul-1.0.0/gravitee-service-discovery-consul-1.0.0.jar
+10:55:43.952 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available policy: 
+10:55:43.955 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> api-key [1.6.4] has been loaded
+10:55:43.955 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-assign-attributes [1.0.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-assign-content [1.1.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cache [1.5.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-http-callout [1.2.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> dynamic-routing [1.4.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-generate-jwt [1.0.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> groovy [1.7.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> html-json [1.3.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ip-filtering [1.2.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-to-json [1.2.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> json-validation [1.0.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jws [1.0.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> jwt [1.9.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> key-less [1.1.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> latency [1.0.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> mock [1.5.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2 [1.7.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-openid-userinfo [1.0.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-override-request-method [1.0.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> quota [1.4.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rate-limit [1.4.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> request-content-limit [1.3.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> policy-request-validation [1.1.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> resource-filtering [1.2.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> rest-to-soap [1.3.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> transform-headers [1.3.1] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> transform-queryparams [1.2.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> url-rewriting [1.0.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xml-json [1.3.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> xslt [1.2.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available reporter: 
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> elastic [1.23.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> file [1.3.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service: 
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> apikeyscache [1.23.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> service-endpoint-discovery [1.23.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> healthcheck [1.23.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> hearbeat [1.23.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> localregistry [1.23.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> ratelimitasync [1.4.0] has been loaded
+10:55:43.956 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> service-subscriptions-cache [1.23.0] has been loaded
+10:55:43.957 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> sync [1.23.0] has been loaded
+10:55:43.957 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-healthcheck [1.2.2] has been loaded
+10:55:43.957 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> node-monitoring [1.2.2] has been loaded
+10:55:43.957 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available repository: 
+10:55:43.957 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-ehcache [1.0.0] has been loaded
+10:55:43.957 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> repository-mongodb [1.23.0] has been loaded
+10:55:43.957 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available identity_provider: 
+10:55:43.957 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available resource: 
+10:55:43.958 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> cache [1.1.0] has been loaded
+10:55:43.958 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2-am-resource [1.7.1] has been loaded
+10:55:43.958 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> oauth2 [1.10.0] has been loaded
+10:55:43.958 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available fetcher: 
+10:55:43.958 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available certificate: 
+10:55:43.958 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available extension_grant: 
+10:55:43.958 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available notifier: 
+10:55:43.958 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available alert: 
+10:55:43.959 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - List of available service_discovery: 
+10:55:43.959 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - 	> consul-service-discovery [1.0.0] has been loaded
+10:55:43.959 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - All plugins have been loaded. Installing...
+10:55:43.959 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPOSITORY plugins...
+10:55:43.964 [graviteeio-node] [] INFO  i.g.g.r.p.RepositoryPluginHandler - Register a new repository plugin: repository-ehcache [io.gravitee.repository.ehcache.EhCacheRepository]
+10:55:43.964 [graviteeio-node] [] INFO  i.g.g.r.p.RepositoryPluginHandler - Repository [CACHE] loaded by ehcache
+10:55:44.028 [graviteeio-node] [] INFO  i.g.r.e.c.EhCacheRepositoryConfiguration - Loading EHCache configuration from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/config/ehcache.xml
+10:55:49.217 [graviteeio-node] [] INFO  i.g.g.r.p.RepositoryPluginHandler - Register a new repository plugin: repository-mongodb [io.gravitee.repository.mongodb.MongoRepository]
+10:55:49.217 [graviteeio-node] [] INFO  i.g.g.r.p.RepositoryPluginHandler - Repository [MANAGEMENT] loaded by mongodb
+10:55:54.683 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='1000 ms', maxWaitQueueSize=500, description='gravitee.io'}
+10:55:54.683 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+10:55:54.739 [cluster-ClusterId{value='5c77b02addce79f5605b3ffa', description='gravitee.io'}-localhost:27017] [] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+10:55:55.450 [graviteeio-node] [] INFO  c.g.d.core.DozerBeanMapperBuilder - Initializing Dozer. Version: 6.4.1, Thread Name: graviteeio-node
+10:55:55.455 [graviteeio-node] [] INFO  c.g.d.c.c.r.LegacyPropertiesSettingsResolver - Trying to find Dozer configuration file: dozer.properties
+10:55:55.462 [graviteeio-node] [] INFO  c.g.d.c.c.r.LegacyPropertiesSettingsResolver - Failed to find dozer.properties via com.github.dozermapper.core.config.resolvers.LegacyPropertiesSettingsResolver.
+10:55:55.466 [graviteeio-node] [] WARN  c.g.d.core.el.ELExpressionFactory - javax.el is not supported; Failed to resolve ExpressionFactory, com.sun.el.ExpressionFactoryImpl
+10:55:55.492 [graviteeio-node] [] INFO  c.g.d.c.b.xml.BeanMappingXMLBuilder - Using URL [dozer.xml] to load custom xml mappings
+10:55:55.647 [graviteeio-node] [] INFO  c.g.d.c.b.x.SchemaLSResourceResolver - Trying to resolve XML entity with public ID [null] and system ID [http://dozermapper.github.io/schema/bean-mapping.xsd]
+10:55:55.649 [graviteeio-node] [] INFO  c.g.d.c.b.x.SchemaLSResourceResolver - Resolved public ID [null] and system ID [http://dozermapper.github.io/schema/bean-mapping.xsd]
+10:55:55.679 [graviteeio-node] [] INFO  c.g.d.c.b.xml.BeanMappingXMLBuilder - Successfully loaded custom xml mapping.
+10:55:56.126 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='1000 ms', maxWaitQueueSize=500, description='gravitee.io'}
+10:55:56.126 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+10:55:56.128 [cluster-ClusterId{value='5c77b02cddce79f5605b3ffb', description='gravitee.io'}-localhost:27017] [] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+10:55:56.132 [graviteeio-node] [] INFO  i.g.g.r.p.RepositoryPluginHandler - Repository [RATE_LIMIT] loaded by mongodb
+10:55:56.149 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='1000 ms', maxWaitQueueSize=500, description='gravitee.io'}
+10:55:56.151 [cluster-ClusterId{value='5c77b02cddce79f5605b3ffc', description='gravitee.io'}-localhost:27017] [] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+10:55:56.192 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 1000 ms before timing out
+10:55:57.195 [graviteeio-node] [] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rateLimitRepository': Invocation of init method failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+10:55:57.196 [graviteeio-node] [] ERROR i.g.p.c.i.PluginContextFactoryImpl - Unable to refresh plugin context
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rateLimitRepository': Invocation of init method failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1686)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at io.gravitee.plugin.core.internal.PluginContextFactoryImpl.create(PluginContextFactoryImpl.java:59)
+	at io.gravitee.gateway.repository.plugins.RepositoryPluginHandler.handle(RepositoryPluginHandler.java:97)
+	at io.gravitee.plugin.core.internal.PluginEventListener.lambda$null$2(PluginEventListener.java:111)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at io.gravitee.plugin.core.internal.PluginEventListener.lambda$deployPlugins$3(PluginEventListener.java:109)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1625)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at io.gravitee.plugin.core.internal.PluginEventListener.deployPlugins(PluginEventListener.java:106)
+	at io.gravitee.plugin.core.internal.PluginEventListener.deployPlugins(PluginEventListener.java:88)
+	at io.gravitee.plugin.core.internal.PluginEventListener.onEvent(PluginEventListener.java:63)
+	at io.gravitee.common.event.impl.EventManagerImpl.publishEvent(EventManagerImpl.java:44)
+	at io.gravitee.common.event.impl.EventManagerImpl.publishEvent(EventManagerImpl.java:36)
+	at io.gravitee.plugin.core.internal.PluginRegistryImpl.init(PluginRegistryImpl.java:105)
+	at io.gravitee.plugin.core.internal.PluginRegistryImpl.doStart(PluginRegistryImpl.java:81)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractNode.doStart(AbstractNode.java:74)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractContainer.doStart(AbstractContainer.java:89)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.start(Bootstrap.java:162)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.main(Bootstrap.java:171)
+Caused by: org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:87)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2592)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.execute(DefaultIndexOperations.java:194)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.ensureIndex(DefaultIndexOperations.java:97)
+	at io.gravitee.repository.mongodb.ratelimit.MongoRateLimitRepository.ensureTTLIndex(MongoRateLimitRepository.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:309)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	... 52 common frames omitted
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:805)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:788)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:783)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:768)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.lambda$ensureIndex$0(DefaultIndexOperations.java:111)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.execute(DefaultIndexOperations.java:192)
+	... 61 common frames omitted
+10:55:57.196 [graviteeio-node] [] ERROR i.g.g.r.p.RepositoryPluginHandler - Unexpected error while creating context for repository instance
+java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@545b5ed0 has not been refreshed yet
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1074)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1086)
+	at io.gravitee.gateway.repository.plugins.RepositoryPluginHandler.registerRepositoryDefinitions(RepositoryPluginHandler.java:131)
+	at io.gravitee.gateway.repository.plugins.RepositoryPluginHandler.handle(RepositoryPluginHandler.java:105)
+	at io.gravitee.plugin.core.internal.PluginEventListener.lambda$null$2(PluginEventListener.java:111)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at io.gravitee.plugin.core.internal.PluginEventListener.lambda$deployPlugins$3(PluginEventListener.java:109)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1625)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at io.gravitee.plugin.core.internal.PluginEventListener.deployPlugins(PluginEventListener.java:106)
+	at io.gravitee.plugin.core.internal.PluginEventListener.deployPlugins(PluginEventListener.java:88)
+	at io.gravitee.plugin.core.internal.PluginEventListener.onEvent(PluginEventListener.java:63)
+	at io.gravitee.common.event.impl.EventManagerImpl.publishEvent(EventManagerImpl.java:44)
+	at io.gravitee.common.event.impl.EventManagerImpl.publishEvent(EventManagerImpl.java:36)
+	at io.gravitee.plugin.core.internal.PluginRegistryImpl.init(PluginRegistryImpl.java:105)
+	at io.gravitee.plugin.core.internal.PluginRegistryImpl.doStart(PluginRegistryImpl.java:81)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractNode.doStart(AbstractNode.java:74)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractContainer.doStart(AbstractContainer.java:89)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.start(Bootstrap.java:162)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.main(Bootstrap.java:171)
+10:55:57.206 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing IDENTITY_PROVIDER plugins...
+10:55:57.206 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing RESOURCE plugins...
+10:55:57.208 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Register a new resource: cache [io.gravitee.resource.cache.CacheResource]
+10:55:57.291 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Register a new resource: oauth2 [io.gravitee.resource.oauth2.generic.OAuth2GenericResource]
+10:55:57.296 [graviteeio-node] [] INFO  i.g.p.r.i.ResourcePluginHandler - Register a new resource: oauth2-am-resource [io.gravitee.resource.oauth2.am.OAuth2AMResource]
+10:55:57.298 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing POLICY plugins...
+10:55:57.299 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: latency [io.gravitee.policy.latency.LatencyPolicy]
+10:55:57.303 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: policy-http-callout [io.gravitee.policy.callout.CalloutHttpPolicy]
+10:55:57.306 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: xslt [io.gravitee.policy.xslt.XSLTTransformationPolicy]
+10:55:57.309 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: jws [io.gravitee.policy.jws.JWSPolicy]
+10:55:57.312 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: html-json [io.gravitee.policy.html2Json.HTMLToJSONTransformationPolicy]
+10:55:57.314 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: policy-openid-userinfo [io.gravitee.policy.openid.userinfo.UserInfoPolicy]
+10:55:57.317 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: cache [io.gravitee.policy.cache.CachePolicy]
+10:55:57.323 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: policy-request-validation [io.gravitee.policy.requestvalidation.RequestValidationPolicy]
+10:55:57.328 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: dynamic-routing [io.gravitee.policy.dynamicrouting.DynamicRoutingPolicy]
+10:55:57.331 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: groovy [io.gravitee.policy.groovy.GroovyPolicy]
+10:55:57.335 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: rest-to-soap [io.gravitee.policy.rest2soap.RestToSoapTransformerPolicy]
+10:55:57.337 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: transform-queryparams [io.gravitee.policy.transformqueryparams.TransformQueryParametersPolicy]
+10:55:57.340 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: quota [io.gravitee.policy.quota.QuotaPolicy]
+10:55:57.343 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: json-validation [io.gravitee.policy.jsonvalidation.JsonValidationPolicy]
+10:55:57.345 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: request-content-limit [io.gravitee.policy.rcl.RequestContentLimitPolicy]
+10:55:57.347 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: json-to-json [io.gravitee.policy.json2json.JsonToJsonTransformationPolicy]
+10:55:57.350 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: policy-assign-content [io.gravitee.policy.assigncontent.AssignContentPolicy]
+10:55:57.352 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: resource-filtering [io.gravitee.policy.resourcefiltering.ResourceFilteringPolicy]
+10:55:57.361 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: mock [io.gravitee.policy.mock.MockPolicy]
+10:55:57.369 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: policy-override-request-method [io.gravitee.policy.overriderequestmethod.OverrideRequestMethodPolicy]
+10:55:57.371 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: policy-assign-attributes [io.gravitee.policy.assignattributes.AssignAttributesPolicy]
+10:55:57.375 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: url-rewriting [io.gravitee.policy.urlrewriting.URLRewritingPolicy]
+10:55:57.377 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: api-key [io.gravitee.policy.apikey.ApiKeyPolicy]
+10:55:57.379 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: rate-limit [io.gravitee.policy.ratelimit.RateLimitPolicy]
+10:55:57.383 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: xml-json [io.gravitee.policy.xml2json.XmlToJsonTransformationPolicy]
+10:55:57.398 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: jwt [io.gravitee.policy.jwt.JWTPolicy]
+10:55:57.404 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: oauth2 [io.gravitee.policy.oauth2.Oauth2Policy]
+10:55:57.407 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: policy-generate-jwt [io.gravitee.policy.generatejwt.GenerateJwtPolicy]
+10:55:57.409 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: key-less [io.gravitee.policy.keyless.KeylessPolicy]
+10:55:57.410 [graviteeio-node] [] INFO  i.g.p.p.i.PolicyConfigurationClassFinder - No policy configuration class defined for policy io.gravitee.policy.keyless.KeylessPolicy
+10:55:57.411 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: ip-filtering [io.gravitee.policy.ipfiltering.IPFilteringPolicy]
+10:55:57.413 [graviteeio-node] [] INFO  i.g.p.p.internal.PolicyPluginHandler - Register a new policy: transform-headers [io.gravitee.policy.transformheaders.TransformHeadersPolicy]
+10:55:57.414 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE plugins...
+10:55:57.414 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: sync [io.gravitee.gateway.services.sync.ScheduledSyncService]
+10:55:57.462 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: apikeyscache [io.gravitee.gateway.services.apikeyscache.ApiKeysCacheService]
+10:55:57.493 [graviteeio-node] [] INFO  i.g.g.s.a.s.ApiKeysCacheConfiguration - Loading EHCache configuration from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/config/ehcache.xml
+10:56:02.698 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-healthcheck [io.gravitee.node.service.healthcheck.NodeHealthcheckService]
+10:56:02.724 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: localregistry [io.gravitee.gateway.services.localregistry.LocalApiDefinitionRegistry]
+10:56:02.734 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: service-endpoint-discovery [io.gravitee.gateway.services.endpoint.discovery.EndpointDiscoveryService]
+10:56:02.761 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: service-subscriptions-cache [io.gravitee.gateway.services.subscriptionscache.SubscriptionsCacheService]
+10:56:02.790 [graviteeio-node] [] INFO  i.g.g.s.s.s.SubscriptionsCacheConfiguration - Loading EHCache configuration from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/config/ehcache.xml
+10:56:08.001 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: node-monitoring [io.gravitee.node.service.monitoring.MonitoringService]
+10:56:08.020 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: healthcheck [io.gravitee.gateway.services.healthcheck.EndpointHealthcheckService]
+10:56:08.049 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: ratelimitasync [io.gravitee.gateway.services.ratelimit.AsyncRateLimitService]
+10:56:08.075 [graviteeio-node] [] INFO  i.g.g.s.r.s.RateLimitProxyConfiguration - Loading EHCache configuration from /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/config/ehcache.xml
+10:56:13.270 [graviteeio-node] [] WARN  i.g.g.s.r.s.RateLimitProxyConfiguration - EHCache cache for ratelimit not found. Fallback to default EHCache configuration
+10:56:13.296 [graviteeio-node] [] WARN  i.g.g.s.r.s.RateLimitProxyConfiguration - EHCache cache for ratelimit-agg not found. Fallback to default EHCache configuration
+10:56:13.297 [graviteeio-node] [] WARN  n.s.e.config.CacheConfiguration - Cache: ratelimit-agg has a maxElementsInMemory of 0. This might lead to performance degradation or OutOfMemoryError at Terracotta client.From Ehcache 2.0 onwards this has been changed to mean a store with no capacity limit. Set it to 1 if you want no elements cached in memory
+10:56:13.303 [graviteeio-node] [] INFO  i.g.n.p.s.h.ServicePluginHandler - Register a new service: hearbeat [io.gravitee.gateway.services.hearbeat.HeartbeatService]
+10:56:13.325 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing REPORTER plugins...
+10:56:13.326 [graviteeio-node] [] INFO  i.g.n.r.plugin.ReporterPluginHandler - Register a new reporter: file [io.gravitee.reporter.file.FileReporter]
+10:56:13.402 [graviteeio-node] [] INFO  i.g.n.r.plugin.ReporterPluginHandler - Register a new reporter: elastic [io.gravitee.reporter.elasticsearch.ElasticsearchReporter]
+10:56:13.585 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing FETCHER plugins...
+10:56:13.585 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing CERTIFICATE plugins...
+10:56:13.585 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing EXTENSION_GRANT plugins...
+10:56:13.585 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing NOTIFIER plugins...
+10:56:13.585 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing ALERT plugins...
+10:56:13.585 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginEventListener - Installing SERVICE_DISCOVERY plugins...
+10:56:13.586 [graviteeio-node] [] INFO  i.g.p.d.i.ServiceDiscoveryPluginHandler - Register a new service discovery: consul-service-discovery [io.gravitee.discovery.consul.ConsulServiceDiscovery]
+10:56:13.588 [graviteeio-node] [] INFO  i.g.p.c.internal.PluginRegistryImpl - Plugins have been loaded and installed.
+10:56:13.588 [graviteeio-node] [] INFO  i.g.g.standalone.node.GatewayNode - 	Starting component: ServiceManager
+10:56:13.589 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Plugins - Services Manager
+10:56:13.589 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Gateway Sync Service
+10:56:13.589 [graviteeio-node] [] INFO  i.g.g.s.sync.ScheduledSyncService - Sync service has been initialized with cron [*/5 * * * * *]
+10:56:13.589 [graviteeio-node] [] INFO  i.g.g.s.sync.ScheduledSyncService - Associate a new HTTP handler on /sync
+10:56:13.600 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service API keys cache repository
+10:56:13.600 [graviteeio-node] [] INFO  i.g.g.s.a.ApiKeysCacheService - Overriding API key repository implementation with cached API Key repository
+10:56:13.601 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener ApiKeysCacheService for event type class io.gravitee.gateway.reactor.ReactorEvent
+10:56:13.602 [graviteeio-node] [] INFO  i.g.g.s.a.ApiKeysCacheService - Associate a new HTTP handler on /apikeys
+10:56:13.605 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Health-check service
+10:56:13.605 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /health [io.gravitee.node.service.healthcheck.management.HealthcheckManagementEndpoint]
+10:56:13.605 [graviteeio-node] [] INFO  i.g.n.s.healthcheck.ProbesLoader - Loading instances for type io.gravitee.node.api.healthcheck.Probe
+10:56:13.610 [graviteeio-node] [] ERROR i.g.n.p.s.impl.ServiceManagerImpl - Unexpected error while starting service
+java.lang.IllegalArgumentException: Cannot instantiate interface io.gravitee.node.api.healthcheck.Probe : io.gravitee.gateway.repository.healthcheck.RateLimitRepositoryProbe
+	at io.gravitee.common.spring.factory.SpringFactoriesLoader.createSpringFactoriesInstances(SpringFactoriesLoader.java:96)
+	at io.gravitee.common.spring.factory.SpringFactoriesLoader.getSpringFactoriesInstances(SpringFactoriesLoader.java:70)
+	at io.gravitee.common.spring.factory.SpringFactoriesLoader.getFactoriesInstances(SpringFactoriesLoader.java:57)
+	at io.gravitee.node.service.healthcheck.ProbesLoader.getProbes(ProbesLoader.java:36)
+	at io.gravitee.node.service.healthcheck.NodeHealthcheckService.doStart(NodeHealthcheckService.java:43)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.plugins.service.impl.ServiceManagerImpl.doStart(ServiceManagerImpl.java:47)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractNode.doStart(AbstractNode.java:74)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractContainer.doStart(AbstractContainer.java:89)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.start(Bootstrap.java:162)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.main(Bootstrap.java:171)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'io.gravitee.gateway.repository.healthcheck.RateLimitRepositoryProbe': Unsatisfied dependency expressed through field 'rateLimitRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.gravitee.repository.ratelimit.api.RateLimitRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBean(AbstractAutowireCapableBeanFactory.java:312)
+	at io.gravitee.common.spring.factory.SpringFactoriesLoader.createSpringFactoriesInstances(SpringFactoriesLoader.java:89)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.gravitee.repository.ratelimit.api.RateLimitRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1506)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	... 22 common frames omitted
+10:56:13.610 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Endpoints Discovery
+10:56:13.621 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Subscriptions cache repository
+10:56:13.621 [graviteeio-node] [] INFO  i.g.g.s.s.SubscriptionsCacheService - Overriding subscription repository implementation with a cached subscription repository
+10:56:13.622 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener SubscriptionsCacheService for event type class io.gravitee.gateway.reactor.ReactorEvent
+10:56:13.622 [vert.x-eventloop-thread-2] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener EndpointDiscoveryVerticle for event type class io.gravitee.gateway.reactor.ReactorEvent
+10:56:13.623 [graviteeio-node] [] INFO  i.g.g.s.s.SubscriptionsCacheService - Associate a new HTTP handler on /subscriptions
+10:56:13.626 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Monitoring Service
+10:56:13.629 [graviteeio-node] [] INFO  i.g.n.s.monitoring.MonitoringService - Node monitoring scheduled with fixed delay 5000 MILLISECONDS 
+10:56:13.629 [graviteeio-node] [] INFO  i.g.n.m.h.v.e.ManagementEndpointManagerImpl - Register a new endpoint for Management API: GET /monitor [io.gravitee.node.service.monitoring.management.MonitorManagementEndpoint]
+10:56:13.629 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Health-check service
+10:56:13.641 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Asynchronous Rate Limit proxy
+10:56:13.642 [graviteeio-node] [] ERROR i.g.n.p.s.impl.ServiceManagerImpl - Unexpected error while starting service
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.gravitee.repository.ratelimit.api.RateLimitRepository' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:333)
+	at io.gravitee.gateway.services.ratelimit.AsyncRateLimitService.doStart(AsyncRateLimitService.java:71)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.plugins.service.impl.ServiceManagerImpl.doStart(ServiceManagerImpl.java:47)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractNode.doStart(AbstractNode.java:74)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractContainer.doStart(AbstractContainer.java:89)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.start(Bootstrap.java:162)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.main(Bootstrap.java:171)
+10:56:13.642 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Gateway Heartbeat
+10:56:13.642 [graviteeio-node] [] INFO  i.g.g.s.hearbeat.HeartbeatService - Start gateway monitor
+10:56:13.643 [vert.x-eventloop-thread-3] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener EndpointHealthcheckVerticle for event type class io.gravitee.gateway.reactor.ReactorEvent
+10:56:15.054 [sync-1] [] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 1000 ms before timing out
+10:56:16.057 [sync-1] [] ERROR i.g.g.services.sync.SyncManager - An error occurs while synchronizing APIs
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:87)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2592)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2459)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2244)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2227)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:770)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:756)
+	at io.gravitee.repository.mongodb.management.internal.api.ApiMongoRepositoryImpl.search(ApiMongoRepositoryImpl.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy57.search(Unknown Source)
+	at io.gravitee.repository.mongodb.management.MongoApiRepository.findByCriteria(MongoApiRepository.java:114)
+	at io.gravitee.repository.mongodb.management.MongoApiRepository.search(MongoApiRepository.java:110)
+	at io.gravitee.gateway.services.sync.SyncManager.synchronizeApis(SyncManager.java:122)
+	at io.gravitee.gateway.services.sync.SyncManager.refresh(SyncManager.java:100)
+	at io.gravitee.gateway.services.sync.ScheduledSyncService.run(ScheduledSyncService.java:87)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.MultiServerCluster.getDescription(MultiServerCluster.java:54)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:172)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:132)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:86)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2442)
+	... 38 common frames omitted
+10:56:16.058 [sync-1] [] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 1000 ms before timing out
+10:56:17.062 [sync-1] [] ERROR i.g.g.services.sync.SyncManager - An error occurs while synchronizing dictionaries
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:87)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2592)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2459)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2244)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2227)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:770)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:365)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:197)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findAll(SimpleMongoRepository.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy80.findAll(Unknown Source)
+	at io.gravitee.repository.mongodb.management.MongoDictionaryRepository.findAll(MongoDictionaryRepository.java:134)
+	at io.gravitee.gateway.services.sync.SyncManager.synchronizeDictionaries(SyncManager.java:160)
+	at io.gravitee.gateway.services.sync.SyncManager.refresh(SyncManager.java:106)
+	at io.gravitee.gateway.services.sync.ScheduledSyncService.run(ScheduledSyncService.java:87)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.MultiServerCluster.getDescription(MultiServerCluster.java:54)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:172)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:132)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:86)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2442)
+	... 38 common frames omitted
+10:56:20.010 [sync-1] [] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 1000 ms before timing out
+10:56:21.012 [sync-1] [] ERROR i.g.g.services.sync.SyncManager - An error occurs while synchronizing APIs
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:87)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2592)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2459)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2244)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2227)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:770)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:756)
+	at io.gravitee.repository.mongodb.management.internal.event.EventMongoRepositoryImpl.search(EventMongoRepositoryImpl.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.search(Unknown Source)
+	at io.gravitee.repository.mongodb.management.MongoEventRepository.search(MongoEventRepository.java:122)
+	at io.gravitee.gateway.services.sync.SyncManager.getLatestApiEvents(SyncManager.java:341)
+	at io.gravitee.gateway.services.sync.SyncManager.synchronizeApis(SyncManager.java:139)
+	at io.gravitee.gateway.services.sync.SyncManager.refresh(SyncManager.java:100)
+	at io.gravitee.gateway.services.sync.ScheduledSyncService.run(ScheduledSyncService.java:87)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.MultiServerCluster.getDescription(MultiServerCluster.java:54)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:172)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:132)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:86)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2442)
+	... 38 common frames omitted
+10:56:21.014 [sync-1] [] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 1000 ms before timing out
+10:56:22.019 [sync-1] [] ERROR i.g.g.services.sync.SyncManager - An error occurs while synchronizing dictionaries
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:87)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2592)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2459)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2244)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2227)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:770)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:756)
+	at io.gravitee.repository.mongodb.management.internal.event.EventMongoRepositoryImpl.search(EventMongoRepositoryImpl.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.search(Unknown Source)
+	at io.gravitee.repository.mongodb.management.MongoEventRepository.search(MongoEventRepository.java:122)
+	at io.gravitee.gateway.services.sync.SyncManager.getLatestDictionaryEvents(SyncManager.java:332)
+	at io.gravitee.gateway.services.sync.SyncManager.synchronizeDictionaries(SyncManager.java:175)
+	at io.gravitee.gateway.services.sync.SyncManager.refresh(SyncManager.java:106)
+	at io.gravitee.gateway.services.sync.ScheduledSyncService.run(ScheduledSyncService.java:87)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.MultiServerCluster.getDescription(MultiServerCluster.java:54)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:172)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:132)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:86)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2442)
+	... 38 common frames omitted
+10:56:23.720 [graviteeio-node] [] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 1000 ms before timing out
+10:56:24.722 [graviteeio-node] [] ERROR i.g.n.p.s.impl.ServiceManagerImpl - Unexpected error while starting service
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:87)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2592)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:526)
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1270)
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1051)
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:988)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.insert(SimpleMongoRepository.java:247)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.insert(Unknown Source)
+	at io.gravitee.repository.mongodb.management.MongoEventRepository.create(MongoEventRepository.java:67)
+	at io.gravitee.repository.mongodb.management.MongoEventRepository.create(MongoEventRepository.java:40)
+	at io.gravitee.gateway.services.hearbeat.HeartbeatService.doStart(HeartbeatService.java:96)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.plugins.service.impl.ServiceManagerImpl.doStart(ServiceManagerImpl.java:47)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractNode.doStart(AbstractNode.java:74)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at io.gravitee.node.container.AbstractContainer.doStart(AbstractContainer.java:89)
+	at io.gravitee.common.component.AbstractLifecycleComponent.start(AbstractLifecycleComponent.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.start(Bootstrap.java:162)
+	at io.gravitee.gateway.standalone.boostrap.Bootstrap.main(Bootstrap.java:171)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.MultiServerCluster.getDescription(MultiServerCluster.java:54)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:190)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at org.springframework.data.mongodb.core.MongoTemplate$8.doInCollection(MongoTemplate.java:1276)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:524)
+	... 39 common frames omitted
+10:56:24.722 [graviteeio-node] [] INFO  i.g.g.standalone.node.GatewayNode - 	Starting component: ManagementService
+10:56:24.723 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Node Management API service
+10:56:24.726 [graviteeio-node] [] INFO  i.g.g.standalone.node.GatewayNode - 	Starting component: ReporterManager
+10:56:24.726 [vert.x-eventloop-thread-4] [] INFO  i.g.n.m.h.v.v.ManagementVerticle - Start HTTP listener for Node Management API
+10:56:24.727 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Reporter service
+10:56:24.728 [graviteeio-node] [] INFO  i.g.g.standalone.node.GatewayNode - 	Starting component: Reactor
+10:56:24.728 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service io.gravitee.gateway.reactor.impl.DefaultReactor
+10:56:24.728 [graviteeio-node] [] INFO  i.g.c.event.impl.EventManagerImpl - Register new listener DefaultReactor for event type class io.gravitee.gateway.reactor.ReactorEvent
+10:56:24.728 [graviteeio-node] [] INFO  i.g.g.standalone.node.GatewayNode - 	Starting component: VertxEmbeddedContainer
+10:56:24.729 [graviteeio-node] [] INFO  i.g.g.s.vertx.VertxEmbeddedContainer - Starting Vertx container and deploy Gateway Verticles [16 instance(s)]
+10:56:24.734 [vert.x-eventloop-thread-6] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - Starting reporter: io.gravitee.node.reporter.vertx.eventbus.EventBusReporterWrapper@1df3ece
+10:56:24.736 [vert.x-eventloop-thread-6] [] INFO  i.g.n.r.vertx.ReporterManagerImpl - Starting reporter: io.gravitee.node.reporter.vertx.eventbus.EventBusReporterWrapper@475efacb
+10:56:24.741 [vert.x-worker-thread-0] [] INFO  i.g.reporter.file.FileReporter - Opened rollover access log file /Users/tomrenaud/Desktop/graviteeio-full-1.23.0/graviteeio-gateway-1.23.0/logs/access-yyyy_mm_dd.log
+10:56:24.750 [graviteeio-node] [] INFO  i.g.g.standalone.node.GatewayNode - 	Starting component: AlertEngineService
+10:56:24.750 [graviteeio-node] [] INFO  i.g.common.service.AbstractService - Initializing service Alert Engine service
+10:56:24.750 [graviteeio-node] [] INFO  i.g.p.a.i.AlertEngineServiceImpl - 	There is no alert to start
+10:56:25.004 [sync-1] [] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 1000 ms before timing out
+10:56:26.008 [sync-1] [] ERROR i.g.g.services.sync.SyncManager - An error occurs while synchronizing APIs
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:87)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2592)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2459)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2244)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2227)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:770)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:756)
+	at io.gravitee.repository.mongodb.management.internal.event.EventMongoRepositoryImpl.search(EventMongoRepositoryImpl.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.search(Unknown Source)
+	at io.gravitee.repository.mongodb.management.MongoEventRepository.search(MongoEventRepository.java:122)
+	at io.gravitee.gateway.services.sync.SyncManager.getLatestApiEvents(SyncManager.java:341)
+	at io.gravitee.gateway.services.sync.SyncManager.synchronizeApis(SyncManager.java:139)
+	at io.gravitee.gateway.services.sync.SyncManager.refresh(SyncManager.java:100)
+	at io.gravitee.gateway.services.sync.ScheduledSyncService.run(ScheduledSyncService.java:87)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.MultiServerCluster.getDescription(MultiServerCluster.java:54)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:172)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:132)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:86)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2442)
+	... 38 common frames omitted
+10:56:26.009 [sync-1] [] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 1000 ms before timing out
+10:56:27.013 [sync-1] [] ERROR i.g.g.services.sync.SyncManager - An error occurs while synchronizing dictionaries
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:87)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2592)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2459)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2244)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2227)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:770)
+	at org.springframework.data.mongodb.core.MongoTemplate.find(MongoTemplate.java:756)
+	at io.gravitee.repository.mongodb.management.internal.event.EventMongoRepositoryImpl.search(EventMongoRepositoryImpl.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.search(Unknown Source)
+	at io.gravitee.repository.mongodb.management.MongoEventRepository.search(MongoEventRepository.java:122)
+	at io.gravitee.gateway.services.sync.SyncManager.getLatestDictionaryEvents(SyncManager.java:332)
+	at io.gravitee.gateway.services.sync.SyncManager.synchronizeDictionaries(SyncManager.java:175)
+	at io.gravitee.gateway.services.sync.SyncManager.refresh(SyncManager.java:106)
+	at io.gravitee.gateway.services.sync.ScheduledSyncService.run(ScheduledSyncService.java:87)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 1000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused (Connection refused)}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:179)
+	at com.mongodb.internal.connection.MultiServerCluster.getDescription(MultiServerCluster.java:54)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:136)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:94)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:249)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:172)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:132)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:86)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2442)
+	... 38 common frames omitted
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-6,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-8,5,main] has been blocked for 2601 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-7,5,main] has been blocked for 2601 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-13,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-1,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-11,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-2,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-4,5,main] has been blocked for 2622 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-15,5,main] has been blocked for 2599 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-14,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-12,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-10,5,main] has been blocked for 2601 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-9,5,main] has been blocked for 2601 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-5,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:27.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-3,5,main] has been blocked for 2600 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-6,5,main] has been blocked for 3600 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-8,5,main] has been blocked for 3601 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-7,5,main] has been blocked for 3601 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-13,5,main] has been blocked for 3600 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-1,5,main] has been blocked for 3601 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-11,5,main] has been blocked for 3601 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-2,5,main] has been blocked for 3600 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-4,5,main] has been blocked for 3623 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-15,5,main] has been blocked for 3599 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-14,5,main] has been blocked for 3600 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 3601 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-12,5,main] has been blocked for 3600 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-10,5,main] has been blocked for 3601 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-9,5,main] has been blocked for 3601 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-5,5,main] has been blocked for 3600 ms, time limit is 2000
+10:56:28.350 [vertx-blocked-thread-checker] [] WARN  i.v.core.impl.BlockedThreadChecker - Thread Thread[vert.x-eventloop-thread-3,5,main] has been blocked for 3600 ms, time limit is 2000

@@ -1,0 +1,42 @@
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:io:gravitee:policy:transformqueryparams:configuration:TransformQueryParametersPolicyConfiguration",
+  "properties" : {
+    "clearAll" : {
+      "type" : "boolean",
+      "title": "Clear all query parameters",
+      "description": "Please be aware that by clearing all query parameters, you mustn't be able to use them in expression language."
+    },
+    "removeQueryParameters" : {
+      "type" : "array",
+      "title": "Remove query parameters",
+      "items" : {
+        "type" : "string",
+        "title": "Query Parameter"
+      }
+    },
+    "addQueryParameters" : {
+      "type" : "array",
+      "title": "Add query parameter",
+      "items" : {
+        "type" : "object",
+        "id" : "urn:jsonschema:io:gravitee:policy:transformqueryparams:configuration:HttpQueryParameter",
+        "title": "Query Parameter",
+        "properties" : {
+          "name" : {
+            "title": "Name",
+            "type" : "string"
+          },
+          "value" : {
+            "title": "Value",
+            "type" : "string"
+          }
+        },
+        "required": [
+          "name",
+          "value"
+        ]
+      }
+    }
+  }
+}

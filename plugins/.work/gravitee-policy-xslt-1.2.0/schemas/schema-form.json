@@ -1,0 +1,54 @@
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:io:gravitee:policy:xslt:configuration:XSLTTransformationPolicyConfiguration",
+  "properties" : {
+    "scope" : {
+      "title": "Scope",
+      "description": "Execute policy on <strong>request</strong> or <strong>response</strong> phase.",
+      "type" : "string",
+      "default": "REQUEST",
+      "enum" : [ "REQUEST", "RESPONSE" ]
+    },
+    "stylesheet" : {
+      "title": "XSLT stylesheet",
+      "type" : "string",
+      "x-schema-form": {
+        "type": "codemirror",
+        "codemirrorOptions": {
+          "placeholder": "Place your XSLT stylesheet here or Drag&Drop your XML file",
+          "lineWrapping": true,
+          "lineNumbers": true,
+          "allowDropFileTypes": true,
+          "autoCloseTags": true,
+          "mode": "xml"
+        }	
+      }
+    },
+    "parameters" : {
+      "type" : "array",
+      "title": "XSLT parameters",
+      "items" : {
+        "type" : "object",
+        "id" : "urn:jsonschema:io:gravitee:policy:xslt:configuration:XSLTParameter",
+        "title": "Parameter",
+        "properties" : {
+          "name" : {
+            "title": "Name",
+            "type" : "string"
+          },
+          "value" : {
+            "title": "Value",
+            "type" : "string"
+          }
+        },
+        "required": [
+          "name",
+          "value"
+        ]
+      }
+    }
+  },
+  "required": [
+    "stylesheet"
+  ]
+}

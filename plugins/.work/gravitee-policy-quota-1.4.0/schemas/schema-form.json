@@ -1,0 +1,49 @@
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:io:gravitee:policy:quota:configuration:QuotaPolicyConfiguration",
+  "properties" : {
+    "async": {
+      "type": "boolean",
+      "default": false,
+      "title": "Non-strict mode (async)",
+      "description": "By activating this option, quota is applied in an asynchronous way meaning that the distributed counter value is not strict."
+    },
+    "addHeaders": {
+      "type": "boolean",
+      "default": true,
+      "title": "Add response headers",
+      "description": "Add X-Quota-Limit, X-Quota-Remaining and X-Quota-Reset headers in HTTP response"
+    },
+    "quota" : {
+      "type" : "object",
+      "title": "Apply quota",
+      "id" : "urn:jsonschema:io:gravitee:policy:quota:configuration:QuotaConfiguration",
+      "properties" : {
+        "limit" : {
+          "type" : "integer",
+          "title": "Max requests",
+          "description": "Limit on the number of requests that can be sent."
+        },
+        "periodTime" : {
+          "type" : "integer",
+          "title": "Time duration",
+          "default": 1
+        },
+        "periodTimeUnit" : {
+          "type" : "string",
+          "title": "Time unit",
+          "default": "MONTHS",
+          "enum" : [ "HOURS", "DAYS", "WEEKS", "MONTHS" ]
+        }
+      },
+      "required": [
+        "limit",
+        "periodTime",
+        "periodTimeUnit"
+      ]
+    }
+  },
+  "required": [
+    "quota"
+  ]
+}
