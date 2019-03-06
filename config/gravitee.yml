@@ -49,8 +49,8 @@ management:
     dbname: ${ds.mongodb.dbname}
     host: ${ds.mongodb.host}
     port: ${ds.mongodb.port}
-#    username:
-#    password:
+    username: ${ds.mongodb.username}
+    password: ${ds.mongodb.password}
 #    connectionsPerHost: 0
 #    connectTimeout: 500
 #    maxWaitTime: 120000
