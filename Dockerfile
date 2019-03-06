@@ -14,6 +14,12 @@ FROM graviteeio/java:8
 
 MAINTAINER Gravitee Team <http://gravitee.io>
 
+ENV ds.mongodb.dbname = $ds.mongodb.dbname
+ENV ds.mongodb.host = $ds.mongodb.host
+ENV ds.mongodb.port = $ds.mongodb.port
+ENV ds.mongodb.username = $ds.mongodb.username
+ENV ds.mongodb.password = $ds.mongodb.password
+
 RUN mkdir -p /usr/src/app/dist
 
 COPY . /usr/src/app/dist
