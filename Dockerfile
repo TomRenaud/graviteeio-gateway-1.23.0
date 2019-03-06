@@ -13,9 +13,5 @@
 FROM graviteeio/java:8
 MAINTAINER Gravitee Team <http://gravitee.io>
 
-ENV GRAVITEEIO_HOME /
-
-WORKDIR ${GRAVITEEIO_HOME}
-
 EXPOSE 8082
 CMD ["./bin/gravitee"]
