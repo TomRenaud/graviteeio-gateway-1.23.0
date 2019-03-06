@@ -11,9 +11,15 @@
 #    limitations under the License.
 #-------------------------------------------------------------------------------
 FROM graviteeio/java:8
+
 MAINTAINER Gravitee Team <http://gravitee.io>
 
-WORKDIR /graviteeio-gateway-1.23.0
+RUN mkdir -p /usr/src/app/dist
+
+COPY . /usr/src/app/dist
+
+WORKDIR /usr/src/app/dist
 
 EXPOSE 8082
+
 CMD ["./bin/gravitee"]
