@@ -13,11 +13,7 @@
 FROM graviteeio/java:8
 MAINTAINER Gravitee Team <http://gravitee.io>
 
-ARG GRAVITEEIO_VERSION=0
 ENV GRAVITEEIO_HOME /
-
-RUN chgrp -R 0 ${GRAVITEEIO_HOME} && \
-    chmod -R g=u ${GRAVITEEIO_HOME}
 
 WORKDIR ${GRAVITEEIO_HOME}
 
