@@ -13,5 +13,7 @@
 FROM graviteeio/java:8
 MAINTAINER Gravitee Team <http://gravitee.io>
 
+WORKDIR /graviteeio-gateway-1.23.0
+
 EXPOSE 8082
 CMD ["./bin/gravitee"]
