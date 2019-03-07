@@ -14,11 +14,12 @@ FROM graviteeio/java:8
 
 MAINTAINER Gravitee Team <http://gravitee.io>
 
-ARG ds.mongodb.dbname = $DS_MONGODB_DBNAME
-ARG ds.mongodb.host = $DS_MONGODB_HOST
-ARG ds.mongodb.port = $DS_MONGODB_PORT
-ARG ds.mongodb.username = $DS_MONGODB_USERNAME
-ARG ds.mongodb.password = $DS_MONGODB_PASSWORD
+
+ENV ds.mongodb.dbname ${MONGODB_ADDON_DB}
+ENV ds.mongodb.host ${MONGODB_ADDON_HOST}
+ENV ds.mongodb.port ${MONGODB_ADDON_PORT}
+ENV ds.mongodb.password ${MONGODB_ADDON_PASSWORD}
+ENV ds.mongodb.username ${MONGODB_ADDON_USER}
 
 RUN mkdir -p /usr/src/app/dist
 
