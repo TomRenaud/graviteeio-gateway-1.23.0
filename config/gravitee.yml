@@ -96,7 +96,7 @@ management:
 ratelimit:
   type: mongodb
   mongodb:
-    uri: mongodb://${MONGODB_ADDON_USER}:${MONGODB_ADDON_PASSWORD}@${MONGODB_ADDON_HOST}:${MONGODB_ADDON_PORT}/${MONGODB_ADDON_DB}
+    uri: ${MONGODB_ADDON_URI}
 
 cache:
   type: ehcache
